@@ -16,7 +16,7 @@ This is a front-end clone of the popular travel website **Tripadvisor**, built u
 
 ## 💻 Live Preview
 
-Check it out here: 
+Check it out here: https://sundari31.github.io/tripadvisor-clone/
 
 ---
 
