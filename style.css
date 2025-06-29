@@ -1,0 +1,843 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navbar 1 */
+.navbar__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.navbar__1 img {
+    width: 40px;
+    margin-right: 10px; 
+}
+
+.section__1 h1 {
+    display: flex;
+    align-items: center;
+}
+
+.section__2 {
+    display: flex;
+    gap: 20px;
+     font-weight: 900px;
+}
+
+.button__1{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 16px;
+   
+}
+
+.button__1:hover{
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.section__2__link {
+    position: relative;
+    cursor: pointer;
+}
+
+.section__2__unline {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.section__2__link:hover .section__2__unline {
+     display: block; 
+}
+
+.section__3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button__3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.button__3:hover{
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.button__4 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+
+.button__4:hover{
+    background-color: grey;
+}
+
+/* Navbar 2 */
+.navbar__2 {
+    text-align: center;
+    padding: 30px 40px 20px;
+}
+
+.navbar__2 h1 {
+    /* font-size: 36px; */
+    font-weight: 800;
+}
+
+/* Navbar 3 */
+.navbar__3 {
+    display: flex;
+   justify-content: center;
+   gap: 10px;
+    padding: 20px 10px;
+}
+
+.label__1 {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+}
+
+.label__1 p {
+    font-weight: 500;
+}
+
+.label__1 .underline {
+    height: 2px;
+    background: black;
+    margin-top: 5px;
+    display: none;
+}
+
+.label__1:hover .underline {
+    display: block;
+}
+
+/* Search Bar */
+.navbar__4 {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.search__bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.search__bar input {
+    border: none;
+    flex: 1;
+}
+
+.search__bar input:focus {
+    outline: none;
+}
+
+
+.search__bar button {
+    background-color: green;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: solid 2px #14855C;
+    cursor: pointer;
+}
+
+.search__bar button:hover{
+    background-color: #84E9BD;
+}
+
+/* Banner */
+.ad-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 30px;
+    background: #FF5D5D;
+}
+
+.ad-banner img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.ad-banner__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.ad-banner__info h1 {
+    font-size: 32px;
+}
+
+.ad-banner__info p {
+    margin: 10px 0;
+}
+
+.ad-banner__info button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Interest */
+
+.interest{
+     text-align: left;
+    padding: 40px 40px 10px;
+}
+
+.interest__title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.interest__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+ .interest-card{
+    position: relative;
+}
+
+.interest-card img{
+     width: 280px;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.interest-card h2{
+    position: absolute;
+    left: 10px;
+    top: 180px;
+    color: white;
+}
+
+
+/* Ads Section */
+.ads-section1 {
+    padding: 40px;
+    text-align: center;
+}
+
+.ads-section1 img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+ /* Recently Viewed */
+    
+    .viewed{
+        text-align: left;
+    padding: 40px 40px 10px;
+    }
+
+    .viewed__title{
+        font-size: 26px;
+    font-weight: 600;
+    }
+
+    .viewed__container{
+          display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+    }
+
+     .view-card{
+        flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+
+    .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+    .view-card img{
+       width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    }
+
+    .view-card h4{
+         padding: 5px;
+    }
+
+    .view-card p{
+        padding: 5px;
+    }
+
+ /* You might like this */
+.liked{
+    text-align: left;
+    padding: 40px 40px 10px;
+}
+
+.liked__title{
+      font-size: 26px;
+    font-weight: 600;
+}
+
+.liked__container{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.liked-card{
+     flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+.liked-card img{
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.liked-card h4{
+    padding: 5px;
+}
+
+.liked-card p{
+     padding: 5px;
+}
+
+/* Must-dos in amazing places */
+.must-dos{
+    text-align: left;
+    padding: 40px 40px 10px;
+}
+
+.must-dos__title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.must-dos__container{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.must-dos__card{
+     flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+
+.must-dos__card img{
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.fa-heart {
+   position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+ .must-dos__card button{
+   border: none;
+   border-radius: 5px;
+   background-color: #C9F2E3;
+   padding: 5px;
+   
+}
+
+.must-dos__card h4{
+    padding: 5px;
+}
+
+.must-dos__card p{
+    padding: 0 10px 10px;
+    font-size: 14px;
+}
+
+.must-dos__card h6{
+    padding: 5px;
+    
+}
+
+ /* Ads Section2 */
+
+.ads-section2 {
+    padding: 40px;
+    text-align: center;
+}
+
+.ads-section2 img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Inspiration to get you going */
+
+ .insp{
+    text-align: left;
+    background-color: #F2F1EC;
+    padding: 40px 40px 40px;
+}
+
+.insp__container {
+    display: flex;
+     overflow-x: auto;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.insp-card {
+     min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+ 
+.insp-card p {
+    text-align: center;
+    padding: 10px;
+} 
+
+/* Things to do—right now */
+
+.things-do {
+    text-align: left;
+    padding: 40px 40px 10px;
+}
+
+.things-do__title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.things-do__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.things-do__card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+
+.things-do__card img{
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+.things-do__card button {
+  border: none;
+   border-radius: 5px;
+   background-color: #C9F2E3;
+   padding: 5px;
+}
+
+.things-do__card h4{
+    padding: 5px;
+}
+
+.things-do__card p,
+.things-do__card h6 {
+    padding: 5px;
+}
+
+ /* Your next trip is waiting  */
+
+.next-dos{
+    text-align: left;
+    padding: 40px 40px 10px;
+} 
+
+.next-dos__title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.next-dos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.next-dos__card{
+     position: relative;
+}
+
+.next-dos__card img{
+    width: 280px;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.next-dos__card h2{
+    position: absolute;
+    left: 10px;
+    top: 180px;
+    color: white;
+}
+
+/* Iconic places you need to see */
+
+.iconic{
+    text-align: left;
+    padding: 40px 40px 10px;
+}
+
+.iconic__title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.iconic__container{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.iconic-card {
+    position: relative;
+}
+
+.iconic-card img {
+    width: 280px;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.iconic-card h2{
+    position: absolute;
+    left: 10px;
+    top: 180px;
+    color: white;
+}
+
+
+/* Browse themed collections */
+
+.browse {
+    text-align: left;
+    padding: 40px 40px 10px;
+}
+
+.browse__title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.browse__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.browse-card {
+    flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+
+.browse-card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.browse-card h2 {
+   position: absolute;
+    left: 10px;
+    top: 180px;
+    color: white;
+}
+
+.browse-card p{
+    padding: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px;
+}
+
+.footer__one {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__one h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer__one p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+    cursor: pointer;
+}
+
+.footer__two {
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer__two img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer__two a{
+    color: black;
+    font-weight: bold;
+    padding: 5px; 
+}
+
+.footer__two i{
+    padding: 5px;
+}
+
+
+/*  MEDIA QUERY */
+@media (max-width: 768px) {
+
+    
+    .section__2 {
+        display: none;
+    }
+
+    .navbar__1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .section__1,
+    .section__3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .button__3,
+    .button__4 {
+        width: 90%;
+    }
+
+    .navbar__3 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .search__bar {
+        flex-direction: column;
+        width: 90%;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .search__bar input,
+    .search__bar button {
+        width: 100%;
+    }
+
+    .ad-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ad-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .interest__container,
+    .viewed__container,
+    .liked__container,
+    .must-dos__container,
+    .things-do__container,
+    .next-dos__container,
+    .iconic__container,
+    .browse__container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+
+    .interest-card,
+    .view-card,
+    .liked-card,
+    .must-dos__card,
+    .things-do__card,
+    .next-dos__card,
+    .iconic-card,
+    .browse-card {
+        width: 100%;
+    }
+
+    .interest-card img,
+    .view-card img,
+    .liked-card img,
+    .must-dos__card img,
+    .things-do__card img,
+    .next-dos__card img,
+    .iconic-card img,
+    .browse-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .view-card h4,
+    .liked-card h4,
+    .must-dos__card h4,
+    .things-do__card h4,
+    .browse-card h2,
+    .iconic-card h2,
+    .next-dos__card h2 {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    .view-card p,
+    .liked-card p,
+    .must-dos__card p,
+    .things-do__card p,
+    .must-dos__card h6,
+    .things-do__card h6,
+    .browse-card p {
+        padding: 0 5px 10px;
+        font-size: 14px;
+    }
+
+    .interest__title,
+    .viewed__title,
+    .liked__title,
+    .must-dos__title,
+    .things-do__title,
+    .next-dos__title,
+    .iconic__title,
+    .browse__title {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .footer__one {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__two__s3,
+    .footer__social {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer__two a {
+        display: block;
+        margin: 5px 0;
+    }
+}
